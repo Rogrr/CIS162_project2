@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+    Filename: Project2_PopUp
+   -->
+   <meta charset="utf-8" />
+   <meta name="keywords" content="PopUp,">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pop UP</title>
+   <!-- Styles link -->
+   <link href="styles.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>   
+ 
+<div class="parent"> 
+    <!-- <header>
+          i had to take out the navigation from header otherwise grid wouldnt work
+    </header> -->
+
+    <div class="titleImageTop">
+        <a href="#"><img src="people-outdoor-activities.jpg" alt="popuplogo" /></a>   
+    </div>
+
+  <nav class="SideBarNav">
+    
+    <div class="navImage">
+        <a href="#"><img src="Pop Up.png" alt="popuplogo" /></a>   
+    </div>    
+    
+    <ul>
+     <li><a href="#">Home</a></li>
+     <li><a href="#">Pop Ups</a></li>
+     <li><a href="#">Organizers</a></li>
+     <li><a href="#">Spaces</a></li>
+     <li><a href="#">Merchants</a></li>
+     <li><a href="#">Explore</a></li>
+    </ul>
+  </nav> 
+
+    <div class="profileLeft">
+            <img src="maleavatar.avif" alt="avatar" />
+
+            <div class="profileLeftinfo">
+            
+            <h1>Roger Ramirez</h1>
+            
+            <h3>Specialty:</h3>
+            
+            <p>Vintage Merchant</p>
+            
+            <!-- <h3>Contact</h3> 
+                <ul>
+                    <li><p>Email: <a href="mailto:fakeemail@student.cerritos.edu">email link</a></p></li>
+                    <li><p>Phone: <a href="tel:+YOURNUMBERHERE">000.000.000</a></p></li>
+                </ul> --> 
+          
+            <h3>Social:</h3>  
+                <ul>
+                    <li><a href="#"><img src="instagram-logo.webp" alt="instagram" class="socialMedia"/></a></li>
+                    <li><a href="#"><img src="twitterlogo.png" alt="twitter" class="socialMedia" /></a></li>
+                    <li><a href="#"><img src="tiktoklogo.png" alt="tiktok" class="socialMedia" /></a></li>
+                </ul>
+            </div>
+        </div>
+        
+    <div class="profileRight">
+         
+                <!--Invite to Pop Up Form-------------------------------------------------------------------------------------->
+
+
+                <form id="survey" action="#" method="post">
+                        
+                    <fieldset id="custInfo"> 
+                    <legend>Lets Connect</legend>
+
+                    <div class="formRow">
+                        <label for="dish"> Upcoming Event </label>
+                        <input name="favDish" id="dish" type="text" list="dishType">
+
+                <!-- eventually I want to the form to auto populate the info depending on what event is choosen -->
+                    
+                        <datalist id="dishType">
+                            <option value="Coachella"></option>
+                            <option value="Long Beach Farmer Market"></option>
+                            <option value="Rodeo Flea Market"></option>
+                            <option value="626 Night Market"></option>
+                            <option value="Still in planning"></option>
+                        </datalist> 
+                    </div>
+
+                    <div class="formRow">
+                        <label for="eventType"> Type  of Pop Up</label>
+                        <input name="popUptype" id="eventType" type="text" list="popupType">
+                    
+                        <datalist id="popupType">
+                            <option value="Open Air Festival"></option>
+                            <option value="Farmer Market"></option>
+                            <option value="Flea Market"></option>
+                            <option value="Food Event"></option>
+                            <option value="Concert"></option>
+                            <option value="Specialty Market"></option>
+                            <option value="Other"></option>
+                        </datalist> 
+                    </div>
+                        
+                        <div class="formRow"> 
+                            <label for="name">Contact*</label>
+                            <input name="custName" id="name" type="text" placeholder="first and last name" required/>
+                        </div>
+
+                        <div class="formRow"> 
+                            <label for="mail">  Email* </label>
+                            <input name="custEmail" id="mail" type="email" required/>
+                        </div>
+
+                        
+                        <div class="formRow"> 
+                            <label for="city"> Event City</label>
+                            <input name="custCity" id="city" type="text" value=""/>
+                        </div>
+
+
+                        <div class="formRow"> 
+                            <label for="state"> State</label>
+                            <input name="custState" id="state" type="text" value=""/>
+                        </div>
+
+                    
+                            
+                        <!-- <div class="formRow">
+                            <label for="dineSpin">How many days is the event ? </label>
+                            <input name="dineOut" id="dineSpin" type="number" value="1" step="1" min="0" max="20" />
+                        </div>
+                -->
+                        <div class="formRow">
+                            <label for="visit"> Start Date </label>
+                            <input name="visitDate" id="visit" type="date" />
+                        </div>
+
+                        <div class="formRow">
+                            <label for="leave"> End Date </label>
+                            <input name="visitDate" id="leave" type="date" />
+                        </div>
+
+                        <input name="mailMe" id="mailCB" value="yes" type="checkbox" />
+                        <label for="mailCB">On going Pop Up, or Tell me more </label>
+
+                        <label for="commBox">!</label>
+                        <textarea name="CustExp" id="commBox" placeholder="Type your comments here..."></textarea>
+
+                        <div id="buttons">
+                            <input type="submit" value="Opt me in" />
+                            <input type="reset" value="Cancel" />
+                        </div>
+
+                    </fieldset>
+
+                    <div class="profileRightInfo">
+                        <H3>Add me to your Pop Up Network</H3>
+                        <a href="#"><img src="fourhandsInvite.avif" alt="Invitebuton" class="invite-image" ></a>
+                    </div>
+
+
+        </div>
+    
+   
+<div class="aboutMe">
+    <h2>About Me</h2>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, deserunt sed cumque quam optio alias modi deleniti distinctio laborum eligendi velit! Delectus voluptatibus qui vel ducimus quas sunt, officiis asperiores sit, aut aperiam hic voluptatum ad quaerat provident illo non cumque dolor reprehenderit esse laudantium reiciendis! Molestiae nobis, saepe eum, odio recusandae provident facilis temporibus assumenda atque at tempora magnam!   
+            <br><br>
+            Images are from <a href="https://www.freepik.com/free-vector/flat-farmers-market-illustration_24493068.htm#query=farmer%20market&position=30&from_view=search&track=ais&uuid=f4298fec-e8cd-4233-aa48-cdfb7616a48e">Freepik</a>
+        </p>
+</div>
+
+
+    <div class="sideScrollphotos">
+            <img src="flat-farmers-market-illustration_23-2149347076.jpg" alt="farmer_market">
+            <img src="flat-volunteers-with-trash-bags-clean-up-garbage-public-park_88138-910.jpg" alt="volunteer_">
+            <img src="flat-thrift-store-shopping-experience-illustration_52683-105137.jpg" alt="flea_market">
+            <img src="hand-drawn-flat-food-festival-illustration_23-2149437322.jpg" alt="Food_market">
+          </div>
+          
+    </div>
+    
+
+
+
+
+
+<!-- -------------------------------------------------------------------------------------->
+
+
+        <div class="bottomParent">
+                
+            <div class="pastEventLeft">
+
+                <h2>Past Events</h2>
+                
+                <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="#">
+                    <img src="FoodfestFlyerPlaceholder.avif" alt="Food Fest LA" width="600" height="400">
+                    </a>
+                    <div class="desc"> Food Fest LA 2019</div>
+                </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                    <a target="_blank" href="#">
+                        <img src="flat-poster-template-second-hand-flea-market-event_23-2149553801.jpg" alt="Flea Con" width="600" height="400">
+                    </a>
+                    <div class="desc">Flea Con 2019 </div>
+                    </div>
+                </div>
+
+
+                
+                <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="#">
+                    <img src="FoodfestFlyerPlaceholder.avif" alt="Food Fest LA" width="600" height="400">
+                    </a>
+                    <div class="desc"> Food Fest LA 2020</div>
+                </div>
+                </div>
+                
+                
+                <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="#">
+                    <img src="flat-poster-template-second-hand-flea-market-event_23-2149553801.jpg" alt="Flea Con" width="600" height="400">
+                    </a>
+                    <div class="desc">Flea Con 2020 </div>
+                </div>
+                </div>
+                
+                <div class="clearfix"></div>
+            </div>
+            
+                <div class="upcomingEventRight"> 
+                    <h2>My Upcoming Events</h2>
+                    
+                        <div class="responsive">
+                            <div class="gallery">
+                            <a target="_blank" href="#">
+                                <img src="hand-drawn-flat-design-farmers-market-poster_23-2149319160.jpg" alt="Farmer Market LB" width="600" height="400">
+                            </a>
+                            <div class="desc"> Farmer Market 2023</div>
+                            </div>
+                        </div>
+        
+
+                        <div class="responsive">
+                            <div class="gallery">
+                            <a target="_blank" href="#">
+                                <img src="FoodfestFlyerPlaceholder.avif" alt="Food Fest LA" width="600" height="400">
+                            </a>
+                            <div class="desc"> Food Fest LA 2023</div>
+                            </div>
+                        </div>
+                        
+                        <div class="responsive">
+                            <div class="gallery">
+                                <a target="_blank" href="#">
+                                <img src="flat-design-food-festival-poster-template_23-2149841899.jpg" alt="Flea Con" width="600" height="400">
+                                </a>
+                                <div class="desc">Food Truck SD 2023 </div>
+                            </div>
+                            </div>
+                        
+                        
+                        <div class="responsive">
+                            <div class="gallery">
+                            <a target="_blank" href="#">
+                                <img src="flat-poster-template-second-hand-flea-market-event_23-2149553801.jpg" alt="Flea Con" width="600" height="400">
+                            </a>
+                            <div class="desc">Flea Market 2023 </div>
+                            </div>
+                        </div>
+                    
+                        
+
+                        <div class="responsive">
+                            <div class="gallery">
+                            <a target="_blank" href="#">
+                                <img src="FoodfestFlyerPlaceholder.avif" alt="Food Fest LA" width="600" height="400">
+                            </a>
+                            <div class="desc"> Food Fest LA 2023</div>
+                            </div>
+                        </div>
+
+                        
+        
+
+                        <div class="responsive">
+                            <div class="gallery">
+                                <a target="_blank" href="#">
+                                <img src="flat-design-food-festival-poster-template_23-2149841899.jpg" alt="Flea Con" width="600" height="400">
+                                </a>
+                                <div class="desc">Food Truck 2023 </div>
+                            </div>
+                            </div>
+                        
+                        
+                        
+                        <div class="responsive">
+                            <div class="gallery">
+                            <a target="_blank" href="#">
+                                <img src="flat-poster-template-second-hand-flea-market-event_23-2149553801.jpg" alt="Flea Con" width="600" height="400">
+                            </a>
+                            <div class="desc">Flea Market 2023 </div>
+                            </div>
+                        </div>
+                        
+                        <div class="responsive">
+                            <div class="gallery">
+                            <a target="_blank" href="#">
+                                <img src="hand-drawn-flat-design-farmers-market-poster_23-2149319160.jpg" alt="Farmer Market LB" width="600" height="400">
+                            </a>
+                            <div class="desc"> Food Fest LA 2023</div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        
+                        <div style="padding:6px;">
+                        
+                        </div>
+                </div>
+        </div>             
+
+<br>
+   <footer> Pop Up &copy; 2023 English (US)</footer>
+   
+</body>
+</html>
