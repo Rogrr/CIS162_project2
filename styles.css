@@ -15,136 +15,25 @@ body {
     font-family: Verdana, Geneva, Arial, sans-serif;   
 }
 
-
+ 
 .parent {  
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr 0.5fr;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr .7fr 1.3fr;
+    grid-template-rows: .4fr 1.6fr 1f;
     gap: 20px 20px;
-    grid-auto-flow: row;
+    grid-auto-flow: column;
     justify-items: stretch;
     grid-template-areas:
     "SideBarNav titleImageTop titleImageTop"
     "SideBarNav profileLeft profileRight"
     "aboutMe sideScrollphotos sideScrollphotos";
-    /* outline: 2px dashed pink; */
+     /* outline: 2px dashed pink;  */
 
 
   }
 
-  /* -------------------bottom flyer grid stuff------------------------- */
-
- .bottomParent{  
-    display: grid;
-    grid-template-columns: .5fr 2fr;
-    grid-template-rows: auto auto auto;
-    gap: 10px 20px;
-    grid-auto-flow: column;
-    justify-items: stretch;
-    grid-template-areas:
-      "pastEventLeft upcomingEventRight"
-      "pastEventLeft upcomingEventRight"
-      ". .";
-  }
   
-  /* .pastEventLeft { grid-area: pastEventLeft; }
-  
-  .upcomingEventRight { grid-area: upcomingEventRight; } */
 
-
-.pastEventLeft {  
-  
-  display: grid;
-  grid-template-columns: 1fr  1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 10px 10px;
-  grid-auto-flow: column;
-  grid-template-areas:
-    "pastEventID1  pastEventID2"
-    "pastEventID3  pastEventID4";
-  grid-area: pastEventLeft;
-}
-
-.pastEventID1 { 
-    grid-area: pastEventID1; 
-    /* outline: 2px dashed pink; */
-    width: 100%;
-}
-
-.pastEventID2 { 
-    grid-area: pastEventID2; 
-    /* outline: 2px dashed pink; */
-    width: 100%;
-}
-
-.pastEventID3 { 
-    grid-area: pastEventID3;
-    /* outline: 2px dashed pink; */
-    width: 100%;
-   
- }
-
-.pastEventID4 { 
-    grid-area:pastEventID4; 
-    /* outline: 2px dashed pink; */
-    width: 100%;
-}
-
-.upcomingEventRight { 
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 10px 10px;
-  grid-auto-flow: column;
-  grid-template-areas:
-    "UpcomingEventID1 UpcomingEventID2 UpcomingEventID3"
-    "UpcomingEventID4 UpcomingEventID5 UpcomingEventID6"
-    ". . .";
-  grid-area: upcomingEventRight;
-}
-
-.UpcomingEventID1 { 
-    grid-area: UpcomingEventID1;
-    /* outline: 2px dashed pink; */
-    width: 100%;
-    
- }
-
-.UpcomingEventID2 { 
-    grid-area: UpcomingEventID2; 
-    /* outline: 2px dashed pink; */
-    width: 100%;
-    }
-
-.UpcomingEventID3 { 
-    grid-area: UpcomingEventID3; 
-    /* outline: 2px dashed pink; */
-    width: 100%;
-}
-
-.UpcomingEventID4 { 
-    grid-area: UpcomingEventID4; 
-    /* outline: 2px dashed pink; */
-    width: 100%;
-}
-
-.UpcomingEventID5 { 
-    grid-area: UpcomingEventID5; 
-    /* outline: 2px dashed pink; */
-    width: 100%;
-    
-}
-
-.UpcomingEventID6 { 
-    grid-area: UpcomingEventID6;
-    /* outline: 2px dashed pink; */
-    width: 100%;
-   
-}
-
-  /* ---------------------------- */
-
- 
   .SideBarNav { grid-area: SideBarNav; 
                 /* outline: 2px dashed pink; */
 
@@ -161,19 +50,33 @@ body {
   
 
   .profileLeft { grid-area: profileLeft;
-                 height: max-content;    
-                 /* outline: 2px dashed pink; */
+                 height: 600px;
+                 background-color:rgb(241, 241, 241) ;
+                 border-radius: 20% 20% 5% 5%;
+                 /* outline: 2px dashed pink;  */
+                 list-style-type: none;
+                 /* margin-left: 10px; */
+                 text-align: center;
                 
 
 }
+
+.profileLeft ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  /* display: inline-block;
+  align-items: center; */
+}
+
   
   .profileRight { grid-area: profileRight;
-                 max-height: 500px;
-                 width: 80%;
+                 max-height: 100%;
+                 max-width: 100%;
                  /* outline: 2px dashed pink; */
                  list-style-type: none;
                  padding: 0px;
-                 width: 300px;
                  height: 600px;
                  background-color: rgb(241, 241, 241);
                  margin-left: 10px;
@@ -186,6 +89,12 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
+    
+  }
+
+  .profileRightInfo {
+margin-left: 22px;
+
   }
 
 
@@ -202,83 +111,47 @@ body {
 
 }
   
-  .sideScrollphotos { 
+  .sideScrollphotos{ 
     grid-area: sideScrollphotos; 
+    width: 100%;
+    
     /* outline: 2px dashed pink;
                        */
 }
   
+/* -------------------bottom flyer grid stuff------------------------- */
 
-/* ---------------- bottom grid --------------------- */
-
-
-
-
-.bottomParent {
-    /* outline: 2px dashed rgb(255, 10, 51);  */
-    margin-top: 30Px;
-    margin-bottom: 10px ;
-    width: 100%;
+.bottomParent{  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px 10px;
+  /* outline: 2px dashed rgb(233, 25, 59);  */
+  margin-top: 20px;
+  grid-template-areas:
+    "pastEventLeft upcomingEventRight upcomingEventRight"
+    "pastEventLeft upcomingEventRight upcomingEventRight";
 }
 
-.pastEventLeft h2{
-    width: 200px;
-    text-align: center;
-    margin-bottom: 10px ;
-    
-}
 
-.upcomingEventRight h2{
-    height: 200px;
-    text-align: center;
-    /* outline: 2px dashed pink; */
+.pastEventLeft {  
+  grid-area: pastEventLeft; 
+  /* outline: 2px dashed rgb(25, 233, 91);  */
+  height: 100%;
 
-}
-
-.pastEventLeft{
-    height: 600px;
-    width: 450px;
 
 }
 
 
-.pastEventLeft img {
-    display: block;
-    width: 10%;
-    align-items: center;
-
-}
-
-
-.upcomingEventRight img {
-    width: 100%;
-    height: auto;
-    align-items: center;
-    display: block;
-}
-
-.pastEventID1 img{
-    width: 100%;
-}
-
-.pastEventID2 img{
-    width: 100%;
-}
-
-.pastEventID3 img{
-    width: 100%;
-}
-
-.pastEventID4 img{
-    width: 100%;
-}
 
 .upcomingEventRight{
-    border-radius: 25%;
+  grid-area: upcomingEventRight;
+  /* outline: 2px dashed rgb(122, 25, 233);  */
+  height: 100%;
+
 }
 
 
-/* ------------------------------------- */
 
 /* ----------  Scroll Wheel ------------ */
 
@@ -288,7 +161,7 @@ body {
     white-space: nowrap;
     padding: 10px;
     height: auto; 
-    width: 615px;
+    width: 100%;
     border-radius: 10%;
   }
   
@@ -316,6 +189,7 @@ body {
 
 .titleImageTop a img{
     width: 100%;
+    height: 150px;
     border-radius: 15%; 
     display: block;
     margin-right: 8%;
@@ -340,8 +214,6 @@ body {
     color: #000;
     padding: 40px 25px;
     text-decoration: none;
-
-
   }
   
   /* Change the link color on hover */
@@ -357,6 +229,20 @@ body {
     border-radius: 20%; 
   }
 
+
+  .socialMedia {
+    width: 20px;
+    height: auto;
+    border-radius: 20%;
+    display: inline-block;
+    margin-right: 10px; 
+    font-size: 10px;
+}
+
+.profileLeft h3 ul {
+   display: inline-block;
+   margin-left: 10px;
+}
 
   .instagram-image {
     width: 30px;
@@ -379,9 +265,152 @@ body {
 
 
 
+/* Form Layout Styles------------------------------ */
+
+form#survey {
+  display:flex;
+  flex-flow: row wrap;
+}
+
+form#survey > fieldset {
+  background-color:   rgb(255, 255, 255);;
+  border-radius: 20px;
+  flex: 1 1 300px;
+  font-size: 0.85em;
+  padding: 10px;
+  margin: 10px;
+}
+
+div.formRow {
+  display:flex;
+  flex-flow: row wrap;
+  margin: 7px 0px;
+}
+
+div.formRow > * {
+  flex: 1 1 150px;
+}
+
+/* Legend Styles */
+
+legend {
+  background-color: rgb(43, 39, 32);
+  color: white;
+  padding: 5px;
+  border-radius: 5%;
+}
+
+
+/* Text Area Styles */
+
+textarea {
+margin-top: 10px;
+height: 100px;
+width: 95%;
+}
+
+/* Spinner Styles */
+
+div.formRow > input#dineSpin {
+flex: 0 0 50px;
+}
 
 
 
+/* Form Button Styles */
+
+div#buttons {
+text-align: center;
+width: 100%;
+}
+
+input[type='submit'], input [type='reset'] {
+font-size: 1.2em;
+padding: 5px;
+margin: 15px;
+}
+
+/* Validation Styles */
+
+input:focus, select:focus, textarea:focus {
+background-color: rgb(220,255,220);
+}
+
+input#name:focus:valid,
+input#zip:focus:valid,
+input#phone:focus:valid{
+background: rgb(220, 255, 220) url(rb_valid.png) bottom right/contain no-repeat;
+}
+
+input#name:focus:invalid,
+input#zip:focus:invalid,
+input#mail:focus:invalid{
+background: rgb(255, 232,233) url(rb_invalid.png) bottom right/contain no-repeat; }
+
+
+
+/* ----------------------------past events flyers ----------------------------- */
+
+
+div.gallery {
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+/* ----------------------------Upcoming events flyers ----------------------------- */
+
+
+/* footer */
+
+footer {
+  width: 100%;
+}
 
 
 
