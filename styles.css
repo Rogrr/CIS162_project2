@@ -223,7 +223,13 @@ margin-left: 22px;
 /* ---------------------------- */
 
 
+.shoutOut iframe {
 
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-radius: 5%;
+
+}
 
 
 /* ----------  Scroll Wheel ------------ */
@@ -538,3 +544,54 @@ footer {
 .newsImage img {
   height: 200px;
 }
+
+
+
+/*   Filter by image css */
+
+.container {
+  overflow: hidden;
+  margin-left: 5%;
+}
+
+.filterDiv {
+  float: left;
+  background-color: rgb(255, 255, 255);
+  color: #ffffff;
+  width: 400px;
+  height: auto;
+  line-height: auto;
+  text-align: center;
+  margin: 2px;
+  border-radius: 2%;
+  display: none; /* Hidden by default */
+}
+
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+/* images place */
